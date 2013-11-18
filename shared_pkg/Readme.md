@@ -1,0 +1,1 @@
+This directory is made accessible to Linux VMs to allow access to pre-downloaded files to reduce the required bandwidth.

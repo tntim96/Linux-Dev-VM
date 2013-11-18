@@ -1,0 +1,9 @@
+/boxes/*.box
+
+.vagrant
+/shared_pkg/*.gz
+
+/shared_pkg/*.zip
+
+/shared_pkg/*.bin
+/shared_pkg/*.jar
