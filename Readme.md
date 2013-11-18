@@ -2,7 +2,7 @@ Vagrant Linux Development VMs
 =============================
 
 Instructions for repeatable set-up of Linux VMs with multiple development kits with the following aims:
-* Create Linux development environments (especially for Ruby where Windows support isn't so good).
+* Create Linux development environments (especially for Ruby where Windows support isn't so good)
 * Maximise cross platform compatibility using puppet
 * Minimise bandwidth by downloading and installing large binaries from the file-system (to be automated)
 * Automate as much of the process as possible
@@ -12,16 +12,22 @@ Supported Linux VMs
 * Centos 64 (TODO)
 * Other (TODO)
 
-Development kits:
-* Java (working)
+Development kits
+* Java (working) Ant/Maven (TODO)
 * NodeJS (TODO)
 * Ruby (TODO)
+
+Tests (TODO). Need to verify code works as expected.
+
+Contributing
+------------
+This is a work in progress so any contributions are welcome.
+
 
 Setting up the environment
 --------------------------
 * Install Virtual Box and Vagrant
 * Download `precise64.box` to `<PROJECT-ROOT>/boxes/`
-* Edit `<PROJECT-ROOT>/Ubuntu64/Vagrant`, property `test_vm.vm.box_url` to point to `precise64.box`
 * Download `jdk-<version>-linux-x64.tar.gz` (e.g. jdk-7u45-linux-x64.tar.gz) to `<PROJECT-ROOT>/shared_pkg/`
 * Change directory to Ubuntu64
 * Run `vagrant up`
