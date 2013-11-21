@@ -57,7 +57,6 @@ class java($java_archive, $java_home, $java_folder) {
     }
 
   file { "/etc/profile.d/java.sh":
-      content => "export JAVA_HOME=${java_home}
-                  export PATH=\$PATH:\$JAVA_HOME/bin"
+      content => "export JAVA_HOME=${java_home}\nexport PATH=\$PATH:\${JAVA_HOME}/bin"
   }
 }
