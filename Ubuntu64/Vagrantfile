@@ -3,6 +3,8 @@ Vagrant::Config.run do |config|
         test_vm.vm.box = "Ubuntu64"
         test_vm.vm.box_url = "..\\boxes\\precise64.box"
 		test_vm.vm.share_folder 'v-shared-pkg', '/shared/pkg', '../shared_pkg'
+		#test_vm.vm.share_folder 'v-m2-repo', '/shared/maven-repo', "${HOMEPATH}/.m2"
+		test_vm.vm.share_folder 'v-m2-repo', '/shared/maven-repo', "C:/Users/T/.m2"
         test_vm.vm.provision :puppet do |puppet|
                 puppet.module_path = "~/vagrant/manifests/"
                 puppet.module_path = "modules"

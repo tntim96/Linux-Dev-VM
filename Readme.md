@@ -13,7 +13,8 @@ Supported Linux VMs
 * Other (TODO)
 
 Development kits
-* Java (working) Ant/Maven (TODO)
+* Java/Ant/Maven (working)
+* Git (TODO)
 * NodeJS (TODO)
 * Ruby (TODO)
 
@@ -23,13 +24,13 @@ Contributing
 ------------
 This is a work in progress so any contributions are welcome.
 
-
 Setting up the environment
 --------------------------
 * Install Virtual Box and Vagrant
 * Download `precise64.box` to `<PROJECT-ROOT>/boxes/`
 * Download `jdk-<version>-linux-x64.tar.gz` (e.g. jdk-7u45-linux-x64.tar.gz) to `<PROJECT-ROOT>/shared_pkg/`
 * Change directory to Ubuntu64
+* Edit the `v-m2-repo` share in the `Vagrantfile` to point to you maven repository (use environment variable?)
 * Run `vagrant up`
 
 Puppet and Java
@@ -44,5 +45,5 @@ VT-x/AMD-V hardware acceleration has been enabled, but is not operational. Your 
 
 Please ensure that you have enabled VT-x/AMD-V properly in the BIOS of your host computer.
 ```
-...you may need to enable this setting in your BIOS. For Windows 8, see [this blog](http://naushad.me/amd-v-hardware-acceleration-has-been-enabled-but-is-not-operational-virtualbox/) for instructions.
+...you may need to enable this setting in your B	IOS. For Windows 8, see [this blog](http://naushad.me/amd-v-hardware-acceleration-has-been-enabled-but-is-not-operational-virtualbox/) for instructions.
 
